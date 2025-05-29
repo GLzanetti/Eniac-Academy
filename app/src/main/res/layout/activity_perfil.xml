@@ -1,11 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
-    >
+    android:padding="10dp">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtNome"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/txtIdade"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Idade"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Medidas"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="14"
+            android:padding="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medições"
+                android:layout_columnWeight="3"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atuais"
+                android:layout_columnWeight="2"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passadas"
+                android:layout_columnWeight="2"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peso"
+                android:layout_columnWeight="3"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtPeso"
+                android:layout_columnWeight="2"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtPesoAntigo"
+                android:layout_columnWeight="2"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altura"
+                android:layout_columnWeight="3"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tórax"
+                android:layout_columnWeight="3"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quadril"
+                android:layout_columnWeight="3"
+                android:layout_column="0"
+                android:layout_row="4"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abdômen"
+                android:layout_columnWeight="3"
+                android:layout_column="0"
+                android:layout_row="5"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cintura"
+                android:layout_columnWeight="3"
+                android:layout_column="0"
+                android:layout_row="6"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escapular"
+                android:layout_columnWeight="3"
+                android:layout_column="0"
+                android:layout_row="7"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Braço Esquerdo"
+                android:layout_columnWeight="3"
+                android:layout_column="0"
+                android:layout_row="8"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Braço Direito"
+                android:layout_columnWeight="3"
+                android:layout_column="0"
+                android:layout_row="9"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coxa Esquerda"
+                android:layout_columnWeight="3"
+                android:layout_column="0"
+                android:layout_row="10"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coxa Direita"
+                android:layout_columnWeight="3"
+                android:layout_column="0"
+                android:layout_row="11"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panturrilha Esquerda"
+                android:layout_columnWeight="3"
+                android:layout_column="0"
+                android:layout_row="12"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panturrilha Direita"
+                android:layout_columnWeight="3"
+                android:layout_column="0"
+                android:layout_row="13"
+                android:textSize="15dp"
+                />
+        </GridLayout>
+    </LinearLayout>
 </LinearLayout>

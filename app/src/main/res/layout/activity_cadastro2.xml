@@ -5,6 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cadastro2">
+    tools:context=".controller.cadastro2">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
