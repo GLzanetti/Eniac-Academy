@@ -147,9 +147,53 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtAltura"
+                android:layout_columnWeight="2"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtAlturaAntigo"
+                android:layout_columnWeight="2"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Tórax"
                 android:layout_columnWeight="3"
                 android:layout_column="0"
+                android:layout_row="3"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtTorax"
+                android:layout_columnWeight="2"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtToraxAntigo"
+                android:layout_columnWeight="2"
+                android:layout_column="2"
                 android:layout_row="3"
                 android:textSize="15dp"
                 />
@@ -167,9 +211,53 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtQuadril"
+                android:layout_columnWeight="2"
+                android:layout_column="1"
+                android:layout_row="4"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtQuadrilAntigo"
+                android:layout_columnWeight="2"
+                android:layout_column="2"
+                android:layout_row="4"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Abdômen"
                 android:layout_columnWeight="3"
                 android:layout_column="0"
+                android:layout_row="5"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtAbdomen"
+                android:layout_columnWeight="2"
+                android:layout_column="1"
+                android:layout_row="5"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtAbdomenAntigo"
+                android:layout_columnWeight="2"
+                android:layout_column="2"
                 android:layout_row="5"
                 android:textSize="15dp"
                 />
@@ -187,9 +275,53 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtCintura"
+                android:layout_columnWeight="2"
+                android:layout_column="1"
+                android:layout_row="6"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtCinturaAntigo"
+                android:layout_columnWeight="2"
+                android:layout_column="2"
+                android:layout_row="6"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Escapular"
                 android:layout_columnWeight="3"
                 android:layout_column="0"
+                android:layout_row="7"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtEcapular"
+                android:layout_columnWeight="2"
+                android:layout_column="1"
+                android:layout_row="7"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtEcapularAntigo"
+                android:layout_columnWeight="2"
+                android:layout_column="2"
                 android:layout_row="7"
                 android:textSize="15dp"
                 />
@@ -207,9 +339,53 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtBracoE"
+                android:layout_columnWeight="2"
+                android:layout_column="1"
+                android:layout_row="8"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtBracoEAntigo"
+                android:layout_columnWeight="2"
+                android:layout_column="2"
+                android:layout_row="8"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Braço Direito"
                 android:layout_columnWeight="3"
                 android:layout_column="0"
+                android:layout_row="9"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtBracoD"
+                android:layout_columnWeight="2"
+                android:layout_column="1"
+                android:layout_row="9"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtBracoDAntigo"
+                android:layout_columnWeight="2"
+                android:layout_column="2"
                 android:layout_row="9"
                 android:textSize="15dp"
                 />
@@ -227,9 +403,53 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtCoxaE"
+                android:layout_columnWeight="2"
+                android:layout_column="1"
+                android:layout_row="10"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtCoxaEAntigo"
+                android:layout_columnWeight="2"
+                android:layout_column="2"
+                android:layout_row="10"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Coxa Direita"
                 android:layout_columnWeight="3"
                 android:layout_column="0"
+                android:layout_row="11"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtCoxaD"
+                android:layout_columnWeight="2"
+                android:layout_column="1"
+                android:layout_row="11"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtCoxaDAntigo"
+                android:layout_columnWeight="2"
+                android:layout_column="2"
                 android:layout_row="11"
                 android:textSize="15dp"
                 />
@@ -247,12 +467,70 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtPanturrilhaE"
+                android:layout_columnWeight="2"
+                android:layout_column="1"
+                android:layout_row="12"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtPanturrilhaEAntigo"
+                android:layout_columnWeight="2"
+                android:layout_column="2"
+                android:layout_row="12"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Panturrilha Direita"
                 android:layout_columnWeight="3"
                 android:layout_column="0"
                 android:layout_row="13"
                 android:textSize="15dp"
                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtPanturrilhaD"
+                android:layout_columnWeight="2"
+                android:layout_column="1"
+                android:layout_row="13"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/txtPanturrilhaDAntigo"
+                android:layout_columnWeight="2"
+                android:layout_column="2"
+                android:layout_row="13"
+                android:textSize="15dp"
+                />
         </GridLayout>
     </LinearLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Sair"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        />
+
 </LinearLayout>
