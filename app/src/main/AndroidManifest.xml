@@ -13,25 +13,25 @@
         android:theme="@style/Theme.EniacAcademy"
         tools:targetApi="31">
         <activity
-            android:name=".perfil"
+            android:name=".controller.perfil"
             android:exported="false" />
         <activity
-            android:name=".nutricao"
+            android:name=".controller.nutricao"
             android:exported="false" />
         <activity
-            android:name=".treinamento"
+            android:name=".controller.treinamento"
             android:exported="false" />
         <activity
-            android:name=".cadastro2"
+            android:name=".controller.cadastro2"
             android:exported="false" />
         <activity
-            android:name=".cadastro1"
+            android:name=".controller.cadastro1"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".controller.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".controller.Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
