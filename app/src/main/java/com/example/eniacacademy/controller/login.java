@@ -11,7 +11,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.eniacacademy.R;
 
-public class Login extends AppCompatActivity {
+public class login extends AppCompatActivity {
 
     EditText txtEmail;
     EditText txtSenha;
