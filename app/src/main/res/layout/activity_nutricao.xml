@@ -3,7 +3,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/fundo2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +16,8 @@
             android:id="@+id/ibPerfil"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_margin="10dp" />
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_launcher_background"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -24,7 +26,8 @@
             android:layout_marginLeft="20dp"
             android:text="Eniac Academy"
             android:textSize="30dp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/alfaslaboneregular"
+            android:textColor="@color/red"/>
 
     </LinearLayout>
 
@@ -44,23 +47,32 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Nutriçâo"
-            android:textSize="20dp" />
+            android:textSize="25dp"
+            android:fontFamily="@font/ubuntumedium"
+            android:textColor="@color/red"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:padding="10dp"
-            android:text="Aqui você encontra dicas para sua dieta e falar com nutricionionista "
-            android:textSize="15dp" />
+            android:text="Aqui você encontra dicas para sua dieta e falar com nutricionionista."
+            android:textSize="20dp"
+            android:fontFamily="@font/ubuntumedium"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:text="Dieta"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/ubuntumedium"
+            android:textColor="@color/red"
+            />
 
         <Button
             android:layout_width="wrap_content"
@@ -68,7 +80,10 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:text="Nutricionista"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/ubuntumedium"
+            android:textColor="@color/red"/>
 
 
     </LinearLayout>
