@@ -5,73 +5,98 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@android:color/darker_gray" >
-
+    android:background="@drawable/fundo2">
 
     <TextView
-        android:padding=""
+        android:layout_marginTop="130dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cadastra-se"
         android:layout_gravity="center"
-        android:textSize="20dp"/>
+        android:textSize="30dp"
+        android:fontFamily="@font/alfaslaboneregular"
+        android:textColor="@color/red"/>
 
 
     <TextView
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Email"
         android:layout_gravity="center"
-        android:textSize="20dp"/>
+        android:textSize="26dp"
+        android:textColor="@color/red"
+        android:fontFamily="@font/ubuntumedium"
+        android:padding="5dp"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:padding="5dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Senha"
         android:layout_gravity="center"
-        android:textSize="20dp"/>
+        android:textSize="26dp"
+        android:textColor="@color/red"
+        android:fontFamily="@font/ubuntumedium"
+        android:padding="5dp"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:padding="5dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Confirma Senha"
         android:layout_gravity="center"
-        android:textSize="20dp"/>
+        android:textSize="26dp"
+        android:textColor="@color/red"
+        android:fontFamily="@font/ubuntumedium"
+        android:padding="5dp"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:padding="5dp"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:text="Cadastre-se"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/red"
+        android:fontFamily="@font/ubuntumedium"
+        android:backgroundTint="@color/black"
         android:layout_gravity="center"
-        android:text="Cadastra-se"
-        android:textSize="20dp"/>
+        android:padding="5dp"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:text="Voltar"
-        android:textSize="20dp"/>
-
-
-
+        android:textSize="20dp"
+        android:textColor="@color/red"
+        android:fontFamily="@font/ubuntumedium"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="center"
+        android:padding="5dp"/>
 
 </LinearLayout>
