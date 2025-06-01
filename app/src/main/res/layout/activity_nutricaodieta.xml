@@ -71,7 +71,7 @@
             android:layout_marginTop="10dp"
             android:padding="10dp"
             android:text=" Recomendamos assim que possível, e se desejado, seguir orientações de um(a) nutricionista."
-            android:textSize="19dp">
+            android:textSize="19dp"/>
 
 
     </LinearLayout>
