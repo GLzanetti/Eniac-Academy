@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/fundo2">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,10 +31,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Eniac Academy"
-                android:textSize="35dp"
+                android:fontFamily="@font/alfaslaboneregular"
+                android:textSize="30dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15dp"
                 />
 
         </LinearLayout>
@@ -55,6 +58,8 @@
                 android:layout_height="wrap_content"
                 android:text="Horarios"
                 android:textSize="25dp"
+                android:fontFamily="@font/ubuntumedium"
+                android:textColor="@color/red"
                 android:layout_gravity="center"
                 android:textStyle="bold"
                 />

@@ -3,7 +3,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/fundo2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +17,8 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:src="@drawable/arrow" />
+            android:src="@drawable/arrow"
+            android:background=" "/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -46,7 +48,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:padding="10dp"
-            android:text=" Você pode pegar dicas para personalizar sua dieta, de acordo com seus objetivos."
+            android:text="Você pode pegar dicas para personalizar sua dieta, de acordo com seus objetivos."
+            android:fontFamily="@font/ubuntumedium"
+            android:textColor="@color/black"
             android:textSize="19dp" />
 
         <TextView
