@@ -4,7 +4,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/fundo2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +19,7 @@
             android:layout_height="70dp"
             android:layout_margin="10dp"
             android:layout_gravity="start"
-            android:backgroundTint="@color/white"
+            android:background=""
             android:src="@drawable/arrow" />
 
         <TextView
@@ -28,8 +29,9 @@
             android:layout_gravity="center"
             android:layout_marginLeft="40dp"
             android:text="Treinamento"
-            android:textSize="35dp"
-            android:textStyle="bold" />
+            android:textSize="30dp"
+            android:fontFamily="@font/alfaslaboneregular"
+            android:textColor="@color/red"/>
 
     </LinearLayout>
 
@@ -60,6 +62,7 @@
             app:borderColor="@color/black"
             android:layout_marginTop="20dp"
             android:text="Teste"
+            android:fontFamily="@font/ubuntumedium"
             android:textAlignment="textStart"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
@@ -73,6 +76,7 @@
             app:strokeWidth="2dp"
             app:borderColor="@color/black"
             android:text="Teste"
+            android:fontFamily="@font/ubuntumedium"
             android:textAlignment="textStart"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
@@ -86,6 +90,7 @@
             app:strokeWidth="2dp"
             app:borderColor="@color/black"
             android:text="Teste"
+            android:fontFamily="@font/ubuntumedium"
             android:textAlignment="textStart"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
@@ -99,6 +104,7 @@
             app:strokeWidth="2dp"
             app:borderColor="@color/black"
             android:text="Teste"
+            android:fontFamily="@font/ubuntumedium"
             android:textAlignment="textStart"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
@@ -112,6 +118,7 @@
             app:strokeWidth="2dp"
             app:borderColor="@color/black"
             android:text="Teste"
+            android:fontFamily="@font/ubuntumedium"
             android:textAlignment="textStart"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
@@ -125,6 +132,7 @@
             app:strokeWidth="2dp"
             app:borderColor="@color/black"
             android:text="Teste"
+            android:fontFamily="@font/ubuntumedium"
             android:textAlignment="textStart"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
@@ -138,6 +146,7 @@
             app:strokeWidth="2dp"
             app:borderColor="@color/black"
             android:text="Teste"
+            android:fontFamily="@font/ubuntumedium"
             android:textAlignment="textStart"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
@@ -151,6 +160,7 @@
             app:strokeWidth="2dp"
             app:borderColor="@color/black"
             android:text="Teste"
+            android:fontFamily="@font/ubuntumedium"
             android:textAlignment="textStart"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"

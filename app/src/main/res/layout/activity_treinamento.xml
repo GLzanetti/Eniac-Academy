@@ -20,6 +20,7 @@
             android:layout_height="100dp"
             android:layout_margin="10dp"
             android:id="@+id/ibPerfil"
+            android:src="@drawable/ic_launcher_background"
             />
 
         <TextView
@@ -54,8 +55,10 @@
             android:text="Treinamentos"
             android:textSize="25dp"
             android:layout_gravity="center"
-            android:textStyle="bold"
+            android:fontFamily="@font/ubuntumedium"
+            android:textColor="@color/red"
             android:layout_marginBottom="20dp"
+            android:textStyle="bold"
             />
 
         <Button
@@ -64,6 +67,7 @@
             android:id="@+id/treinoA"
             android:text="Treino A: "
             android:textSize="16dp"
+            android:fontFamily="@font/ubuntumedium"
             app:cornerRadius="15dp"
             app:strokeWidth="2dp"
             android:backgroundTint="@color/white"
@@ -77,6 +81,8 @@
             android:id="@+id/treinoB"
             android:text="Treino B: "
             android:textSize="16dp"
+            android:fontFamily="@font/ubuntumedium"
+            app:cornerRadius="15dp"
             app:strokeWidth="2dp"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
@@ -89,6 +95,8 @@
             android:id="@+id/treinoC"
             android:text="Treino C: "
             android:textSize="16dp"
+            android:fontFamily="@font/ubuntumedium"
+            app:cornerRadius="15dp"
             app:strokeWidth="2dp"
             android:backgroundTint="@color/white"
             android:textColor="@color/black"
