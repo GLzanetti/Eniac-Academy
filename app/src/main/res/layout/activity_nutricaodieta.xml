@@ -3,8 +3,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/fundo2">
+    android:background="@drawable/fundo2"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,15 +17,17 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:src="@drawable/arrow"
-            android:background=" "/>
+            android:background=" "
+            android:src="@drawable/arrow" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="2dp"
+            android:fontFamily="@font/alfaslaboneregular"
             android:text="Personalizaçâo de Dieta"
+            android:textColor="@color/red"
             android:textSize="20dp"
             android:textStyle="bold" />
 
@@ -47,35 +49,27 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
-            android:padding="10dp"
-            android:text="Você pode pegar dicas para personalizar sua dieta, de acordo com seus objetivos."
             android:fontFamily="@font/ubuntumedium"
-            android:textColor="@color/black"
-            android:textSize="19dp" />
+            android:padding="5dp"
+            android:text="Você pode pegar dicas para personalizar sua dieta, de acordo com seus objetivos."
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            android:textAlignment="center"
+
+            />
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:padding="15dp"
-            android:text=" Como pode também seguir a dieta pré-montada no arquivo pdf abaixo."
-            android:textSize="19dp" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:text="Dieta.pdf"
-            android:textSize="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:padding="10dp"
+            android:padding="5dp"
             android:text=" Recomendamos assim que possível, e se desejado, seguir orientações de um(a) nutricionista."
-            android:textSize="19dp"/>
+            android:textSize="19dp"
+            android:fontFamily="@font/ubuntumedium"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            />
 
 
     </LinearLayout>

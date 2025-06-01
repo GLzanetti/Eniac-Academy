@@ -3,62 +3,89 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
+    android:background="@drawable/fundo2"
     android:orientation="vertical">
 
     <TextView
 
+        android:layout_marginTop="130dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Cadastre-se"
-        android:textSize="25dp" />
+        android:fontFamily="@font/alfaslaboneregular"
+        android:textColor="@color/red"
+        android:textSize="30dp" />
 
     <TextView
+        android:fontFamily="@font/ubuntumedium"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Nome"
-        android:textSize="20dp" />
+        android:textSize="26dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:ems="10" />
+        android:ems="10"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:padding="5dp"/>
 
     <TextView
+        android:fontFamily="@font/ubuntumedium"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="CPF"
-        android:textSize="20dp" />
+        android:textSize="26dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:ems="10" />
+        android:ems="10"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:padding="5dp"/>
 
     <TextView
+        android:fontFamily="@font/ubuntumedium"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Idade"
-        android:textSize="20dp" />
+        android:textSize="26dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:ems="10" />
+        android:ems="10"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Entrar"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:backgroundTint="@color/black"
+        android:padding="5dp"
+        android:fontFamily="@font/ubuntumedium"
+        android:textColor="@color/red"
+        />
 
 
 </LinearLayout>

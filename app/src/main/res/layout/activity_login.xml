@@ -7,27 +7,48 @@
     android:orientation="vertical"
     android:background="@drawable/fundo2">
 
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Email"
-    android:textSize="20dp"
-    android:inputType="text"
-    android:layout_gravity="center" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:text="Login"
+        android:textColor="@color/red"
+        android:textSize="30dp"
+        android:fontFamily="@font/alfaslaboneregular"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:text="Email"
+        android:textSize="26dp"
+        android:fontFamily="@font/ubuntumedium"
+        android:textColor="@color/red"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"/>
 
 <EditText
     android:id="@+id/txtEmail"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:ems="10"
-    android:layout_gravity="center"/>
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:padding="5dp"
+    android:textColor="@color/black"
+    />
 
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Senha"
-    android:textSize="20dp"
-    android:layout_gravity="center" />
+    android:textSize="26dp"
+    android:layout_gravity="center"
+    android:fontFamily="@font/ubuntumedium"
+    android:textColor="@color/red"
+    android:padding="5dp"/>
 
 <EditText
     android:id="@+id/txtSenha"
@@ -35,22 +56,35 @@
     android:layout_height="wrap_content"
     android:ems="10"
     android:inputType="textPassword"
-    android:layout_gravity="center" />
+    android:layout_gravity="center"
+    android:padding="5dp"
+    android:background="@color/white"
+    android:textColor="@color/black"/>
 
 <Button
+    android:layout_marginTop="50dp"
     android:id="@+id/btnEntrar"
-    android:layout_width="wrap_content"
+    android:layout_width="150dp"
     android:layout_height="wrap_content"
     android:text="Entrar"
     android:textSize="20dp"
-    android:layout_gravity="center"/>
+    android:fontFamily="@font/ubuntumedium"
+    android:layout_gravity="center"
+    android:textColor="@color/red"
+    android:backgroundTint="@color/black"
+    android:padding="5dp"/>
 
 <Button
-    android:layout_width="wrap_content"
+    android:layout_width="200dp"
     android:layout_height="wrap_content"
     android:text="Cadastra-se"
     android:layout_gravity="center"
-    android:textSize="20dp"/>
+    android:textSize="20dp"
+    android:fontFamily="@font/ubuntumedium"
+    android:textColor="@color/red"
+    android:backgroundTint="@color/black"
+    android:padding="5dp"
+    />
 
 
 </LinearLayout>
