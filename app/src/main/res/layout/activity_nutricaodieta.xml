@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,71 +8,144 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="10dp">
-
-        <ImageButton
-            android:id="@+id/idibGoBack"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
-            android:background=" "
-            android:src="@drawable/arrow" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="2dp"
-            android:fontFamily="@font/alfaslaboneregular"
-            android:text="Personalizaçâo de Dieta"
-            android:textColor="@color/red"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:textAlignment="center"/>
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/black" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="30dp">
+        >
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
-        <TextView
+            <ImageButton
+                android:id="@+id/idibGoBack"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="null"
+                android:src="@drawable/arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/alfaslaboneregular"
+                android:text="Personalizaçâo de Dieta"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black" />
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:fontFamily="@font/ubuntumedium"
-            android:padding="5dp"
-            android:text="Você pode pegar dicas para personalizar sua dieta, de acordo com seus objetivos."
-            android:textColor="@color/white"
-            android:textSize="19dp"
-            android:textAlignment="center"
+            android:orientation="vertical"
+            android:padding="30dp">
 
-            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Texto informativo"
+                android:textSize="25dp"
+                android:fontFamily="@font/alfaslaboneregular"
+                android:textColor="@color/red"
+                />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Todos tem composições corporais diferentes, fazendo com que cada indivíduo precise de uma certa quantidade de nutrientes, seja para mais ou para menos."
+                android:textSize="19dp"
+                android:fontFamily="@font/ubuntumedium"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:padding="5dp"
-            android:text=" Recomendamos assim que possível, e se desejado, seguir orientações de um(a) nutricionista."
-            android:textSize="19dp"
-            android:fontFamily="@font/ubuntumedium"
-            android:textColor="@color/white"
-            android:textAlignment="center"
-            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Outro fator que interfere são seus objetivos, como: emagrecer, ganhar mais musculos, participar de um campeonato entre outros."
+                android:textSize="19dp"
+                android:fontFamily="@font/ubuntumedium"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ubuntumedium"
+                android:padding="5dp"
+                android:text="Você pode encontrar dicas para personalizar sua dieta, de acordo com seus objetivos."
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:textAlignment="center"
 
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Recomendamos assim que possível, e se desejado, seguir orientações de um(a) nutricionista."
+                android:textSize="19dp"
+                android:fontFamily="@font/ubuntumedium"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="E não recomendamos que tente montar um dieta personalizada com base em seus objetivos por conta própria."
+                android:textSize="19dp"
+                android:fontFamily="@font/ubuntumedium"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="A falta de informação pode te levar a um caminho indesejado e mais distante do seu objetivo. Portanto, recomendamos que siga sempre as instruções de um profissional."
+                android:textSize="19dp"
+                android:fontFamily="@font/ubuntumedium"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Portanto, recomendamos que siga sempre as instruções de um profissional, pois sempre priorizamos a saúde e o bem-estar de nossos alunos."
+                android:textSize="19dp"
+                android:fontFamily="@font/ubuntumedium"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
     </LinearLayout>
-
-</LinearLayout>
+</ScrollView>

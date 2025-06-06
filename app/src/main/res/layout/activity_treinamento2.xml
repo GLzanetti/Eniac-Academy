@@ -19,7 +19,7 @@
             android:layout_height="70dp"
             android:layout_margin="10dp"
             android:layout_gravity="start"
-            android:background=""
+            android:background="null"
             android:src="@drawable/arrow" />
 
         <TextView
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             app:cornerRadius="8dp"
             app:strokeWidth="2dp"
-            app:borderColor="@color/black"
+
             android:layout_marginTop="20dp"
             android:text="Teste"
             android:fontFamily="@font/ubuntumedium"
@@ -74,7 +74,7 @@
             android:layout_height="wrap_content"
             app:cornerRadius="8dp"
             app:strokeWidth="2dp"
-            app:borderColor="@color/black"
+
             android:text="Teste"
             android:fontFamily="@font/ubuntumedium"
             android:textAlignment="textStart"
@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             app:cornerRadius="8dp"
             app:strokeWidth="2dp"
-            app:borderColor="@color/black"
+
             android:text="Teste"
             android:fontFamily="@font/ubuntumedium"
             android:textAlignment="textStart"
@@ -102,7 +102,7 @@
             android:layout_height="wrap_content"
             app:cornerRadius="8dp"
             app:strokeWidth="2dp"
-            app:borderColor="@color/black"
+
             android:text="Teste"
             android:fontFamily="@font/ubuntumedium"
             android:textAlignment="textStart"
@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             app:cornerRadius="8dp"
             app:strokeWidth="2dp"
-            app:borderColor="@color/black"
+
             android:text="Teste"
             android:fontFamily="@font/ubuntumedium"
             android:textAlignment="textStart"
@@ -130,7 +130,7 @@
             android:layout_height="wrap_content"
             app:cornerRadius="8dp"
             app:strokeWidth="2dp"
-            app:borderColor="@color/black"
+
             android:text="Teste"
             android:fontFamily="@font/ubuntumedium"
             android:textAlignment="textStart"
@@ -144,7 +144,7 @@
             android:layout_height="wrap_content"
             app:cornerRadius="8dp"
             app:strokeWidth="2dp"
-            app:borderColor="@color/black"
+
             android:text="Teste"
             android:fontFamily="@font/ubuntumedium"
             android:textAlignment="textStart"
@@ -158,7 +158,7 @@
             android:layout_height="wrap_content"
             app:cornerRadius="8dp"
             app:strokeWidth="2dp"
-            app:borderColor="@color/black"
+
             android:text="Teste"
             android:fontFamily="@font/ubuntumedium"
             android:textAlignment="textStart"
@@ -169,3 +169,4 @@
     </LinearLayout>
 
 </LinearLayout>
+    <!--            app:borderColor="@color/black"-->
