@@ -79,6 +79,7 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:id="@+id/btCadastro2"
         android:text="Cadastre-se"
         android:textSize="20dp"
         android:layout_marginTop="40dp"
@@ -91,6 +92,7 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:id="@+id/btVoltarCadastro"
         android:text="Voltar"
         android:textSize="20dp"
         android:textColor="@color/red"

@@ -1,108 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainDrawer_layoutTreinamento"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundo2"
-    android:orientation="vertical"
-    >
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        >
+        android:layout_height="match_parent"
+        android:background="@drawable/fundo2"
+        android:orientation="vertical">
 
-        <ImageButton
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
-            android:id="@+id/ibPerfil"
-            android:src="@drawable/ic_launcher_background"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Eniac Academy"
-            android:textSize="30dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="15dp"
-            android:fontFamily="@font/alfaslaboneregular"
-            android:textColor="@color/red"
-            />
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/ibPerfil"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/alfaslaboneregular"
+                android:text="Eniac Academy"
+                android:textColor="@color/red"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/ubuntumedium"
+                android:text="Treinamentos"
+                android:textColor="@color/red"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/treinoA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/ubuntumedium"
+                android:text="Treino A: "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:cornerRadius="15dp"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/treinoB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/ubuntumedium"
+                android:text="Treino B: "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:cornerRadius="15dp"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/treinoC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/ubuntumedium"
+                android:text="Treino C: "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:cornerRadius="15dp"
+                app:strokeWidth="2dp" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/black"
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="30dp"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Treinamentos"
-            android:textSize="25dp"
-            android:layout_gravity="center"
-            android:fontFamily="@font/ubuntumedium"
-            android:textColor="@color/red"
-            android:layout_marginBottom="20dp"
-            android:textStyle="bold"
-            />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/treinoA"
-            android:text="Treino A: "
-            android:textSize="16dp"
-            android:fontFamily="@font/ubuntumedium"
-            app:cornerRadius="15dp"
-            app:strokeWidth="2dp"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            android:layout_margin="20dp"
-            />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/treinoB"
-            android:text="Treino B: "
-            android:textSize="16dp"
-            android:fontFamily="@font/ubuntumedium"
-            app:cornerRadius="15dp"
-            app:strokeWidth="2dp"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            android:layout_marginLeft="20dp"
-            />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/treinoC"
-            android:text="Treino C: "
-            android:textSize="16dp"
-            android:fontFamily="@font/ubuntumedium"
-            app:cornerRadius="15dp"
-            app:strokeWidth="2dp"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/black"
-            android:layout_margin="20dp"
-            />
-
-    </LinearLayout>
-
-</LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+</androidx.drawerlayout.widget.DrawerLayout>

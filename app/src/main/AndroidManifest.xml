@@ -31,10 +31,10 @@
             android:name=".controller.cadastro1"
             android:exported="false" />
         <activity
-            android:name=".controller.MainActivity"
+            android:name=".controller.mainActivity"
             android:exported="false" />
         <activity
-            android:name=".controller.Login"
+            android:name=".controller.login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

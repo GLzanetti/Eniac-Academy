@@ -3,6 +3,10 @@
     <style name="Base.Theme.EniacAcademy" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+
+
     </style>
 
     <style name="Theme.EniacAcademy" parent="Base.Theme.EniacAcademy" />

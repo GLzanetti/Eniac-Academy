@@ -1,6 +1,9 @@
 package com.example.eniacacademy.controller;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +15,7 @@ import com.example.eniacacademy.R;
 
 public class cadastro1 extends AppCompatActivity {
 
+    Button btCadastro1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,5 +26,16 @@ public class cadastro1 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        btCadastro1 = findViewById(R.id.btCadastro1);
+
+        btCadastro1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(cadastro1.this, cadastro2.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

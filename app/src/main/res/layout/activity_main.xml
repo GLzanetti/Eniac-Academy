@@ -1,86 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainDrawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/fundo2">
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
-    <LinearLayout
+    <ScrollView
+        android:id="@+id/main_content_scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:background="@drawable/fundo2"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp"
-            >
+            android:orientation="vertical">
 
-            <ImageButton
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_margin="10dp"
-                android:id="@+id/ibPerfil"
-                android:src="@drawable/ic_launcher_background"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Eniac Academy"
-                android:fontFamily="@font/alfaslaboneregular"
-                android:textSize="30dp"
-                android:layout_gravity="center"
-                android:textColor="@color/red"
-                android:layout_marginLeft="15dp"
-                />
+                android:orientation="horizontal"
+                android:padding="10dp">
 
-        </LinearLayout>
+                <ImageButton
+                    android:id="@+id/ibPerfil"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:contentDescription="Botão para abrir o menu"
+                    android:src="@drawable/ic_launcher_background" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/black"
-            />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/alfaslaboneregular"
+                    android:text="Eniac Academy"
+                    android:textColor="@color/red"
+                    android:textSize="30dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="30dp"
-            >
+            </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Horarios"
-                android:textSize="25dp"
-                android:fontFamily="@font/ubuntumedium"
-                android:textColor="@color/red"
-                android:layout_gravity="center"
-                android:textStyle="bold"
-                />
+                android:orientation="vertical"
+                android:padding="30dp">
 
-            <ImageView
-                android:layout_width="300dp"
-                android:layout_height="300dp"
-                android:src="@drawable/horariosfuncionamento"
-                android:layout_gravity="center"
-                android:layout_marginTop="40dp"
-                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/ubuntumedium"
+                    android:text="Horarios"
+                    android:textColor="@color/red"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
 
-            <ImageView
-                android:layout_width="300dp"
-                android:layout_height="300dp"
-                android:src="@drawable/horariosextras"
-                android:layout_gravity="center"
-                android:layout_marginTop="40dp"
-                />
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/horariosfuncionamento" />
 
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:src="@drawable/horariosextras" />
+
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-</ScrollView>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer"
+        />
+</androidx.drawerlayout.widget.DrawerLayout>
