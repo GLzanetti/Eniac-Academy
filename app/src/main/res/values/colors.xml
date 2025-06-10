@@ -6,4 +6,5 @@
     <color name="grey2">#7A7A7A</color>
     <color name="red">#FF0000</color>
     <color name="blue">#0919af</color>
+    <color name="transparent_color">#00000000</color>
 </resources>

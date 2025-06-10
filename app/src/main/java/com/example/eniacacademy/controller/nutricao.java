@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
@@ -23,6 +24,7 @@ public class nutricao extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     ImageButton ibPerfil;
+    Button btNutricionista, btDieta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,8 @@ public class nutricao extends AppCompatActivity {
         drawerLayout = findViewById(R.id.mainDrawer_layoutNutricao);
         navigationView = findViewById(R.id.nav_view);
         ibPerfil = findViewById(R.id.ibPerfil);
+        btNutricionista = findViewById(R.id.btNutricionista);
+        btDieta = findViewById(R.id.btDieta);
 
         ibPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +72,22 @@ public class nutricao extends AppCompatActivity {
 
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
+            }
+        });
+
+        btNutricionista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(nutricao.this, nutricaowhats.class);
+                startActivity(intent);
+            }
+        });
+
+        btDieta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(nutricao.this, nutricaodieta.class);
+                startActivity(intent);
             }
         });
     }

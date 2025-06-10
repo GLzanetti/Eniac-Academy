@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.EniacAcademy"
         tools:targetApi="31">
@@ -20,6 +20,12 @@
             android:exported="false" />
         <activity
             android:name=".controller.nutricao"
+            android:exported="false" />
+        <activity
+            android:name=".controller.nutricaodieta"
+            android:exported="false" />
+        <activity
+            android:name=".controller.nutricaowhats"
             android:exported="false" />
         <activity
             android:name=".controller.treinamento"
