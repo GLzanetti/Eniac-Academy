@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,8 +14,10 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.eniacacademy.R;
 
+
 public class cadastro1 extends AppCompatActivity {
 
+    EditText txtNome, txtCpf, txtIdade;
     Button btCadastro1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,9 @@ public class cadastro1 extends AppCompatActivity {
         });
 
         btCadastro1 = findViewById(R.id.btCadastro1);
+        txtCpf = findViewById(R.id.txtCpf);
+        txtIdade = findViewById(R.id.txtIdade);
+        txtNome = findViewById(R.id.txtNome);
 
         btCadastro1.setOnClickListener(new View.OnClickListener() {
             @Override

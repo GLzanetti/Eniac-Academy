@@ -29,6 +29,7 @@
         android:textSize="26dp" />
 
     <EditText
+        android:id="@+id/txtNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -48,6 +49,7 @@
         android:padding="5dp"/>
 
     <EditText
+        android:id="@+id/txtCpf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -67,6 +69,7 @@
         android:padding="5dp"/>
 
     <EditText
+        android:id="@+id/txtIdade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

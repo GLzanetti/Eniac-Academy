@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +16,7 @@ import com.example.eniacacademy.R;
 
 public class cadastro2 extends AppCompatActivity {
 
+    EditText txtEmail, txtSenha, txtConfirmasenha;
     Button btCadastro2, btVoltarCadastro;
 
     @Override
@@ -30,6 +32,9 @@ public class cadastro2 extends AppCompatActivity {
 
         btCadastro2 = findViewById(R.id.btCadastro2);
         btVoltarCadastro = findViewById(R.id.btVoltarCadastro);
+        txtConfirmasenha = findViewById(R.id.txtConfirmasenha);
+        txtEmail = findViewById(R.id.txtEmail);
+        txtSenha = findViewById(R.id.txtSenha);
 
         btVoltarCadastro.setOnClickListener(new View.OnClickListener() {
             @Override
