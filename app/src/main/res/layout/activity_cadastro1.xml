@@ -54,6 +54,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:ems="10"
+        android:maxLength="11"
+        android:inputType="number"
         android:background="@color/white"
         android:textColor="@color/black"
         android:padding="5dp"/>
@@ -74,6 +76,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:ems="10"
+        android:maxLength="2"
+        android:inputType="number"
         android:background="@color/white"
         android:textColor="@color/black"
         android:padding="5dp"

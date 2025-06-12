@@ -19,7 +19,7 @@ public class CriaBanco extends SQLiteOpenHelper {
                 "id integer PRIMARY KEY AUTOINCREMENT," +
                 "nome text NOT NULL," +
                 "cpf text NOT NULL," +
-                "idade int NOT NULL," +
+                "idade text NOT NULL," +
                 "email text NOT NULL," +
                 "senha text NOT NULL)";
         db.execSQL(sql);
