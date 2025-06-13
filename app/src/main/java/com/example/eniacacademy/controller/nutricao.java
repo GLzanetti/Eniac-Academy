@@ -1,11 +1,14 @@
 package com.example.eniacacademy.controller;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -17,6 +20,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.example.eniacacademy.R;
+import com.example.eniacacademy.model.Usuario;
 import com.google.android.material.navigation.NavigationView;
 
 public class nutricao extends AppCompatActivity {
@@ -25,6 +29,8 @@ public class nutricao extends AppCompatActivity {
     NavigationView navigationView;
     ImageButton ibPerfil;
     Button btNutricionista, btDieta;
+    View headerView;
+    TextView txtNomeUsuario, txtEmailUsuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +48,12 @@ public class nutricao extends AppCompatActivity {
         ibPerfil = findViewById(R.id.ibPerfil);
         btNutricionista = findViewById(R.id.btNutricionista);
         btDieta = findViewById(R.id.btDieta);
+
+        headerView = navigationView.getHeaderView(0);
+
+        txtNomeUsuario = headerView.findViewById(R.id.txtNomeUsuario);
+        txtEmailUsuario = headerView.findViewById(R.id.txtEmailUsuario);
+        carregarDadosUsuario();
 
         ibPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,5 +102,16 @@ public class nutricao extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    private void carregarDadosUsuario() {
+        String prefs_name = "usuario_prefs";
+        SharedPreferences preferences = getSharedPreferences(prefs_name, MODE_PRIVATE);
+
+        String nomeUsuario = preferences.getString("usuario_nome","Visitante");
+        String emailUsuario = preferences.getString("usuario_email","faca_login@app.com");
+
+        txtNomeUsuario.setText(nomeUsuario);
+        txtEmailUsuario.setText(emailUsuario);
     }
 }

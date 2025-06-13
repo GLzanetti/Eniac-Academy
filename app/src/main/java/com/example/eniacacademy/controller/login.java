@@ -1,6 +1,7 @@
 package com.example.eniacacademy.controller;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +16,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.eniacacademy.R;
+import com.example.eniacacademy.model.Usuario;
 
 public class login extends AppCompatActivity {
 
@@ -40,7 +42,10 @@ public class login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(validaLogin()){
+                    String email = txtEmail.getText().toString();
+
                     Intent intent = new Intent(login.this, mainActivity.class);
+                    intent.putExtra("Email", email);
                     startActivity(intent);
                 }
             }
@@ -62,6 +67,11 @@ public class login extends AppCompatActivity {
 
         boolean retorno = true;
 
+        Usuario usuario = null;
+
+        String prefs_name = "usuario_prefs";
+        SharedPreferences preferences = getSharedPreferences(prefs_name, MODE_PRIVATE);
+
         if(email.isEmpty()){
             retorno = false;
             msg = "Preencha o campo email corretamente";
@@ -75,7 +85,20 @@ public class login extends AppCompatActivity {
 
         usuariosController bd = new usuariosController(getBaseContext());
 
-        Cursor dados = bd.getData(email, senha);
+        Cursor allDados = bd.getData(email);
+
+        if(allDados.moveToFirst()){
+            usuario = new Usuario(allDados.getString(1), allDados.getString(3), allDados.getString(4));
+
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putString("usuario_nome", usuario.getNome());
+            editor.putString("usuario_idade", usuario.getIdade());
+            editor.putString("usuario_email", usuario.getEmail());
+
+            editor.apply();
+        }
+
+        Cursor dados = bd.getDataLogin(email, senha);
 
         if(dados.moveToFirst()){
             retorno = true;

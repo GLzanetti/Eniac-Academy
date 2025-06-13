@@ -1,10 +1,13 @@
 package com.example.eniacacademy.controller;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -23,6 +26,9 @@ public class treinamento extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     ImageButton ibPerfil;
+    View headerView;
+    TextView txtNomeUsuario, txtEmailUsuario;
+    Button btTreinoA, btTreinoB, btTreinoC;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,9 +41,19 @@ public class treinamento extends AppCompatActivity {
             return insets;
         });
 
+        btTreinoA = findViewById(R.id.treinoA);
+        btTreinoB = findViewById(R.id.treinoB);
+        btTreinoC = findViewById(R.id.treinoC);
+
         drawerLayout = findViewById(R.id.mainDrawer_layoutTreinamento);
         navigationView = findViewById(R.id.nav_view);
         ibPerfil = findViewById(R.id.ibPerfil);
+
+        headerView = navigationView.getHeaderView(0);
+
+        txtNomeUsuario = headerView.findViewById(R.id.txtNomeUsuario);
+        txtEmailUsuario = headerView.findViewById(R.id.txtEmailUsuario);
+        carregarDadosUsuario();
 
         ibPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,5 +86,46 @@ public class treinamento extends AppCompatActivity {
                 return true;
             }
         });
+
+        btTreinoA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String treino = "Treino A";
+                Intent intent = new Intent(treinamento.this, treinamento2.class);
+                intent.putExtra("treino", treino);
+                startActivity(intent);
+            }
+        });
+
+        btTreinoB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String treino = "Treino B";
+                Intent intent = new Intent(treinamento.this, treinamento2.class);
+                intent.putExtra("treino", treino);
+                startActivity(intent);
+            }
+        });
+
+        btTreinoC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String treino = "Treino C";
+                Intent intent = new Intent(treinamento.this, treinamento2.class);
+                intent.putExtra("treino", treino);
+                startActivity(intent);
+            }
+        });
+    }
+
+    private void carregarDadosUsuario() {
+        String prefs_name = "usuario_prefs";
+        SharedPreferences preferences = getSharedPreferences(prefs_name, MODE_PRIVATE);
+
+        String nomeUsuario = preferences.getString("usuario_nome","Visitante");
+        String emailUsuario = preferences.getString("usuario_email","faca_login@app.com");
+
+        txtNomeUsuario.setText(nomeUsuario);
+        txtEmailUsuario.setText(emailUsuario);
     }
 }

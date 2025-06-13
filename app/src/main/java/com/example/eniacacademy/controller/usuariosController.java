@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.eniacacademy.model.CriaBanco;
+import com.example.eniacacademy.model.Usuario;
 
 public class usuariosController {
 
@@ -16,7 +17,7 @@ public class usuariosController {
         banco = new CriaBanco(context);
     }
 
-    public String insertData(String nome, String cpf, int idade, String email, String senha){
+    public String insertData(String nome, String cpf, String idade, String email, String senha){
         ContentValues values;
         long result;
         db = banco.getWritableDatabase();
@@ -28,7 +29,7 @@ public class usuariosController {
         values.put("email", email);
         values.put("senha", senha);
 
-        result = db.insert("usuario", null, values);
+        result = db.insert("usuarios", null, values);
         db.close();
 
         if(result == -1){
@@ -38,7 +39,7 @@ public class usuariosController {
         }
     }
 
-    public Cursor getData(String email, String senha){
+    public Cursor getDataLogin(String email, String senha){
         Cursor cursor;
         String[] campos = {"email","senha"};
         String where = "email='" + email + "' AND senha='" + senha + "'";
@@ -53,5 +54,18 @@ public class usuariosController {
         return cursor;
     }
 
+    public Cursor getData(String email){
+        Cursor cursor;
+        String[] campos = {"id","nome","cpf","idade","email","senha"};
+        String where = "email='" + email + "'";
+        db = banco.getWritableDatabase();
+        cursor = db.query("usuarios", campos, where, null, null, null, null);
 
+        if(cursor != null){
+            cursor.moveToFirst();
+        }
+
+        db.close();
+        return cursor;
+    }
 }

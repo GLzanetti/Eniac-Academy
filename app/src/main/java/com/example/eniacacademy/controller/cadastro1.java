@@ -41,7 +41,16 @@ public class cadastro1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (validarCadastro1()) {
-                    startActivity(passarDadosCadastro1());
+                    String nome = txtNome.getText().toString();
+                    String idade = txtIdade.getText().toString();
+                    String cpf = txtCpf.getText().toString();
+
+                    Intent intent = new Intent(cadastro1.this, cadastro2.class);
+                    intent.putExtra("Nome", nome);
+                    intent.putExtra("Idade", idade);
+                    intent.putExtra("Cpf", cpf);
+
+                    startActivity(intent);
                 }
             }
         });
@@ -73,18 +82,5 @@ public class cadastro1 extends AppCompatActivity {
         }
 
         return retorno;
-    }
-
-    private Intent passarDadosCadastro1() {
-        String nome = txtNome.getText().toString();
-        String idade = txtIdade.getText().toString();
-        String cpf = txtCpf.getText().toString();
-
-        Intent intent = new Intent(cadastro1.this, cadastro2.class);
-        intent.putExtra("nome", nome);
-        intent.putExtra("idade", idade);
-        intent.putExtra("cpf", cpf);
-
-        return intent;
     }
 }

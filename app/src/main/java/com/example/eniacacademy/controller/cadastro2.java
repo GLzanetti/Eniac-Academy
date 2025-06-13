@@ -50,7 +50,10 @@ public class cadastro2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (validarCadastro2()){
+                    String email = txtEmail.getText().toString();
+
                     Intent intent = new Intent(cadastro2.this, mainActivity.class);
+                    intent.putExtra("Email", email);
                     startActivity(intent);
                 }
             }
@@ -58,9 +61,14 @@ public class cadastro2 extends AppCompatActivity {
     }
 
     public boolean validarCadastro2(){
+        String nome = getIntent().getStringExtra("Nome");
+        String idade = getIntent().getStringExtra("Idade");
+        String cpf = getIntent().getStringExtra("Cpf");
+
         String confirmaSenha = txtConfirmaSenha.getText().toString();
         String email = txtEmail.getText().toString();
         String senha = txtSenha.getText().toString();
+
         String msg = "";
         boolean retorno = true;
 
@@ -73,10 +81,16 @@ public class cadastro2 extends AppCompatActivity {
             msg = "A senha deve conter 6 caracteres";
             Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
             retorno = false;
-        } else if(confirmaSenha != senha){
+        } else if(!confirmaSenha.equals(senha)){
             msg = "A senha deve ser igual ao campo de cima";
             Toast.makeText(this,msg, Toast.LENGTH_LONG).show();
             retorno = false;
+        } else {
+            usuariosController db = new usuariosController(getBaseContext());
+            String salvarResultado;
+
+            salvarResultado = db.insertData(nome, cpf, idade, email, senha);
+            Toast.makeText(this, salvarResultado, Toast.LENGTH_LONG).show();
         }
 
         return retorno;
